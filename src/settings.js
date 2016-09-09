@@ -2,8 +2,6 @@
  * CONFIGURATION FILE
  */
 
-var upload_dir = 'data/';
-
 export const configuration = {
 	SERVER: "localhost",
 	PROTOCOL: "http://",
