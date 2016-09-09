@@ -41,4 +41,3 @@ app.set('view cache', false);
 server.listen(app.get('port'), function(e) {
 	log.info("http://"+settings.SERVER+":"+settings.PORT,"  ",server.address())
 })
-
