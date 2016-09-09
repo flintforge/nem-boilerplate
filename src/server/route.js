@@ -28,11 +28,11 @@ module.exports = function (app) {
 				log.dbg(req.params)
 				next()
 			})
-			.get('/', (req, res /*, next*/)=>{
+			.get('/', (req, res, next)=>{
 				log.dbg('woot')
 				res.send('ok')
 			})
-			.use((err /*, req, res, next*/)=>{
+			.use((err , req, res, next)=>{
 				// this is where the authorized policy should handle jwt tokens, extra headers, viewstates id, etc.
 				if (err === 'UnauthorizedError') {
 					log.dbg(err)
